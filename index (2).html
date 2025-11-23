@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gym Management Website</title>
+      <!-- faunt awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="logic2.css">
+</head>
+<body>
+    
+    <!-- <header>
+        <h1><span>🏋️‍♂️</span> Gym Management System</h1>
+    </header> -->
+       <header>
+      <div class="logo" aria-label="Core Fitness Logo">
+      <span class="gold">Core</span> <span class="highlight">Fitness</span>
+    </div>
+    <nav aria-label="Main Navigation">
+       <span class="gold">🏋️‍♂️GYM MANAGEMENT SYSTEM</span>
+      <button id="joinNavBtn" tabindex="0" aria-label="Join Us">Join Us</button>
+    </nav>
+     </header>
+    <main>
+        <!-- User Info & Logout -->
+         <div id="userInfo" class="hidden">
+    <div id="welcomeMsg"></div>
+    <div>
+        <button id="homeBtn" title="Home" style="margin-right: 10px;">Home</button>
+        <button id="logoutBtn" title="Logout">Logout</button>
+    </div>
+</div>
+        
+
+        <!-- Login Form -->
+        <form id="loginForm">
+            <h3 style="color: #2ecc71; text-align:center; margin-bottom: 14px;">Login to Your Role</h3>
+            <hr style="margin-bottom: 14px; border: 0.7px solid #666;">
+            <input id="email" type="email" placeholder="Email (e.g., admin@gym.com)" required />
+            <input id="password" type="password" placeholder="Password (e.g., adminpass)" required />
+            <select id="role" required>
+                <option value="admin">Admin</option>
+                <option value="member">Member</option>
+                <option value="user">User</option>
+            </select>
+            <button type="submit">Login</button>
+            <p style="margin-top:10px; font-size:0.8rem; color:#999;">
+                Demo Credentials: <br />
+                admin@gym.com / adminpass (Admin), <br />
+                member@gym.com / memberpass (Member), <br />
+                user@gym.com / userpass (User)
+            </p>
+        </form>
+
+        <!-- Admin Module -->
+        <article id="admin-module" class="module hidden" aria-label="Admin Module">
+            <h2>Admin Dashboard</h2>
+            <button id="addMemberBtn">Add Member</button>
+            <button id="viewMembersBtn">View Members</button>
+            <button id="createBillBtn">Create Bill</button>
+            <button id="assignPackageBtn">Assign Fee Package</button>
+            <button id="assignNotificationBtn">Assign Monthly Notifications</button>
+            <button id="exportReportBtn">Export Monthly Report (CSV)</button>
+            <button id="supplementStoreBtn">Manage Supplement Store</button>
+            <button id="dietDetailsBtn">Manage Diet Details</button>
+            <div id="adminContent" style="margin-top: 20px;"></div>
+        </article>
+
+        <!-- Member Module -->
+        <article id="member-module" class="module hidden" aria-label="Member Module">
+            <h2>Member Dashboard</h2>
+            <section>
+                <h3>Bill Receipts</h3>
+                <div id="billReceipts">Loading...</div>
+            </section>
+            <section>
+                <h3>Bill Notifications</h3>
+                <div id="billNotifications">Loading...</div>
+            </section>
+            <section>
+                <h3>Your Package Plan</h3>
+                <div id="memberPlan">Loading plan...</div>
+            </section>
+
+        </article>
+
+        <!-- User Module -->
+        <article id="user-module" class="module hidden" aria-label="User Module">
+            <h2>User Dashboard: Search for Members</h2>
+            <input id="searchInput" type="text" placeholder="Search members by name or email..." autocomplete="off"/>
+            <div id="searchResults" style="margin-top: 18px;"></div>
+        </article>
+         <div>
+           <button class="end"><a href="index.html">FrontPage</a></button>
+         </div>
+    </main>
+         <footer class="footer">
+                                <div class="social">
+                                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+
+                                 <p class="copyright">
+                                      &copy; Core Fitness 2025 - All Rights Reserved 
+                                 </p>
+                             </footer>
+
+    <script src="logic.js"></script>
+</body>
+</html>

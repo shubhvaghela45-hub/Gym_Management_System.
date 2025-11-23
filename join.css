@@ -1,0 +1,293 @@
+  /* Centered container, half width */
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111111;;
+            color: #eee;
+        }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: transparent;
+  }
+  .logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    user-select: none;
+  }
+  .logo .highlight {
+    color: #2ecc71; /* Green accent */
+  }
+  .logo .gold {
+    color: #f1c40f; /* Gold accent */
+  }
+  nav {
+    display: flex;
+    gap: 25rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  span .gold {
+    justify-content: center;
+    align-items: center;
+  }
+  nav .gold {
+    color: #f1c40f;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.5rem;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  nav a:hover {
+    color: #2ecc71;
+  }
+  #joinNavBtn {
+    border: 2px solid #2ecc71;
+    padding: 0.4rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #2ecc71;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #joinNavBtn:hover {
+    background-color: #2ecc71;
+    color: #000;
+  }
+
+main {
+    max-width: 900px;
+    margin: 12px auto;
+    background: #222;
+    border-radius: 10px;
+    padding: 30px 25px 18px;
+    box-shadow: 1px 1px 8px 1px #000000d8;
+    user-select: none;
+}
+        /* Login Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, select {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #ccc;
+    font-size: 0.95rem;
+    transition: background 0.3s, color 0.3s;
+}
+       
+input::placeholder {
+            color: #777
+}
+
+input:focus, select:focus {
+    background: #4646a2;
+    color: white;
+}
+
+select {
+    cursor: pointer;
+}
+   
+button {
+    background-color: #229022;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1c741c;
+}
+
+p {
+    color: #868686;
+    font-size: 0.7rem;
+    margin-top: 7px;
+}
+
+.hidden {
+    display: none;
+}
+    
+    #container {
+      width: 50%;
+      background: #222;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 5rem;
+      margin-left: 25rem;
+      margin-bottom: 3rem;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffee33;
+    }
+    .phase {
+      display: none;
+    }
+    .phase.active {
+      display: block;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: none;
+      margin-bottom: 15px;
+    }
+    button,
+    button a {
+      background: #22bb66;
+      border: none;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #44dd88;
+    }
+    #packageDisplay {
+      border: 1px solid #ffee33;
+      border-radius: 8px;
+      padding: 15px;
+    }
+    #packageDisplay h3 {
+      color: #ffee33;
+      margin-bottom: 10px;
+    }
+    #packageDisplay ul {
+      margin-left: 20px;
+    }
+    #backToLogin {
+      margin-top: 10px;
+      background: #444;
+      color: #eee;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 6px;
+      width: 100%;
+    }
+
+/* footer */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background: #111111;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #2ecc71;
+}
+
+.footer .social a {
+    font-size: 25px;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    background: #ffd700;
+    color: #131313;
+    box-shadow: 0 0 25px #f1c40f;
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+  @media (max-width: 768px) {
+      header {
+          padding: 1rem; /* Reduce header padding */
+      }
+      nav {
+          gap: 5rem; /* Adjust nav gap */
+      }
+      nav .gold {
+          font-size: 1.2rem; /* Smaller title */
+      }
+      #container {
+          width: 90%; /* Use more screen width */
+          margin-left: auto; /* Center horizontally */
+          margin-right: auto;
+          padding: 15px;
+      }
+      h2 {
+          font-size: 1.8rem; /* Smaller heading */
+      }
+      label, input, button {
+          font-size: 1rem; /* Readable text */
+      }
+      button {
+          padding: 14px 0; /* Larger buttons */
+      }
+      #packageDisplay {
+          padding: 10px; /* Reduce padding */
+      }
+  }
+
+  @media (max-width: 480px) {
+      .logo {
+          font-size: 1.5rem; /* Smaller logo */
+      }
+      #container {
+          width: 95%; /* Near-full width on phones */
+          margin-top: 3rem;
+          margin-bottom: 2rem;
+      }
+      input[type="text"], input[type="email"], input[type="password"] {
+          padding: 10px; /* Bigger inputs */
+      }
+      button, button a {
+          font-size: 1.1rem; /* Larger button text */
+          padding: 12px 15px;
+      }
+      #backToLogin, #logoutBtn {
+          width: 100%; /* Full-width buttons */
+          margin: 5px 0;
+      }
+  }
+  
