@@ -4,8 +4,8 @@ Project Overview
 This project is a comprehensive Gym Management System designed to manage gym operations effectively. The system includes member management, billing, packages, notifications, supplements, and diet plans. It supports role-based access control for Admins, Members, and Users.
 
 ## 📸 Demo / Live Link  
-🔗 **Live Preview:**   
-📂 **Repository Link:** 
+🔗 **Live Preview:** https://shubhvaghela45-hub.github.io/Gym_Management_System./
+📂 **Repository Link:** https://github.com/shubhvaghela45-hub/Gym_Management_System..git
 
 ---
 
@@ -34,8 +34,7 @@ This project is a comprehensive Gym Management System designed to manage gym ope
 > ## 📦 Installation & Setup
 
 ```bash
-# Clone repo
-git clone 
+
 
 ```
 
